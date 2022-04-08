@@ -5,62 +5,49 @@ function myFunction() {
     var exampleInputEmail1 = document.getElementById("exampleInputEmail1");
     var wachtwoord = document.getElementById("wachtwoord");
     var herhaalwachtwoord = document.getElementById("herhaalwachtwoord");
-    var provincie = document.getElementById("provincie");
-    var postcode = document.getElementById("postcode");
-    var flexCheckDefault1 = document.getElementById("flexCheckDefault1");
+    var adres = document.getElementById("adres");
+    var land = document.getElementById("land");
     var flexCheckDefault2 = document.getElementById("flexCheckDefault2");
-    var flexRadioDefault1 = document.getElementById("flexRadioDefault1");
-    var flexRadioDefault2 = document.getElementById("flexRadioDefault2");
-    var flexRadioDefault3 = document.getElementById("flexRadioDefault3");
-    var flexRadioDefault4 = document.getElementById("flexRadioDefault4");
+    var postcode = document.getElementById("postcode");
+    var provincie = document.getElementById("provincie");
 
 
     
     let msg="";  
           
     if(!voornaam.value) { // or checked
-      msg += "voornaam is null \n";
+      msg += "Het veld voornaam is vereist. \n";
     }
     if(!naam.value) { // or checked
-        msg += "naam is null \n";
+        msg += "Het veld naam is vereist. \n";
       }
       if(!gebruikersnaam.value) { // or checked
-        msg += "gebruikersnaam is null \n";
+        msg += "Het veld gebruikersnaam is vereist. \n";
       }
       if(!exampleInputEmail1.value) { // or checked
-        msg += "exampleInputEmail1 is null \n";
+        msg += "Het veld email is vereist. \n";
       }
       if(!wachtwoord.value) { // or checked
-        msg += "wachtwoord is null \n";
+        msg += "Het veld wachtwoord is vereist. \n";
       }
       if(!herhaalwachtwoord.value) { // or checked
-        msg += "herhaalwachtwoord is null \n";
+        msg += "Het veld herhaal wachtwoord is vereist. \n";
       }
-      if(!provincie.value) { // or checked
-        msg += "provincie is null \n";
+      if(!adres.value) { // or checked
+        msg += "Adres is vereist. \n";
       }
-      if(!postcode.value) { // or checked
-        msg += "postcode is null \n";
-      }
-      if(!flexCheckDefault1.value) { // or checked
-        msg += "flexCheckDefault1 is null \n";
-      }
+      // if(!land.value) { // or checked
+      //   msg += "Land is vereist. \n";
+      // }
+      // if(!provincie.value) { // or checked
+      //   msg += "Provincie is vereist. \n";
+      // }
+      // if(!postcode.value) { // or checked
+      //   msg += "Postcode is vereist. \n";
+      // }
       if(!flexCheckDefault2.value) { // or checked
-        msg += "flexCheckDefault2 is null \n";
+        msg += "Je moet de algemene voorwaarden accepteren. \n";
       }
-      if(!flexRadioDefault1.value) { // or checked
-        msg += "flexRadioDefault1 is null \n";
-      }
-    
-    if(!flexRadioDefault2.value){
-      msg += "flexRadioDefault2 is null \n";
-    }
-    
-    if(!flexRadioDefault3.value){
-      msg += "flexRadioDefault3 is null \n";
-    }
-    if(!flexRadioDefault4.value){
-        msg += "flexRadioDefault4 is null \n";
-      }
+      
     alert(msg);
   }
